@@ -1,0 +1,146 @@
+.screen{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    height: 600px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.313);
+}
+
+.question{
+    font-weight: 600;
+    font-size: 33px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212)
+}
+
+.votesBox{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 600px;
+    height: 220px;
+    background-color: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.111);
+}
+
+.votes{
+    display: flex;
+    padding: 15px 27px;
+    width: 100%;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    border-bottom: 1px solid #C9C9C9;
+    font-size: 21px;
+    font-weight: 600;
+    color: #151515;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+button:hover{
+    opacity: 75%;
+}
+
+@media screen and (max-width: 1024px){
+    .screen{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .screen{
+        height: 350px;
+    }
+    .question{
+        font-size: 24px;
+    }
+    .votesBox{
+        width: 450px;
+        height: 180px;
+    }
+    .votes{
+        padding: 12px 25px;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    .screen{
+        height: 270px;
+        gap: 15px;
+    }
+    .question{
+        font-size: 18px;
+    }
+    .votesBox{
+        overflow-x: hidden;
+        width: 300px;
+        height: 155px;
+    }
+    .votes{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .buttons{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .screen{
+        width: 100%;
+        height: 270px;
+    }
+    .question{
+        font-size: 17px;
+    }
+    .votesBox{
+        overflow-x: hidden;
+        width: 265px;
+        height: 150px;
+    }
+    .votes{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .buttons{
+        width: 255px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .screen{
+        width: 100%;
+        height: 270px;
+    }
+    .question{
+        font-size: 15px;
+    }
+    .votesBox{
+        overflow-x: hidden;
+        width: 235px;
+        height: 151px;
+    }
+    .votes{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .buttons{
+        width: 210px;
+    }
+}

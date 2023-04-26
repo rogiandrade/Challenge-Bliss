@@ -1,0 +1,29 @@
+.errorpage{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.errorpage h1{
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+.errorpage p{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.errorpage i{
+    color: #CCCCCC;
+    font-size: 20px;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #025091;
+}

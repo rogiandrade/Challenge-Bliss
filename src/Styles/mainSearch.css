@@ -1,0 +1,273 @@
+main{
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 900px;
+    height: 470px;
+}
+
+form{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-flow: wrap;
+    transition: 0.5s;
+}
+
+label{
+    font-weight: 600;
+    font-size: 33px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212)
+}
+
+input[type="search"]{
+    width: 550px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 25px;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.111);
+    transition: 0.5s;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+
+input[type="search"]:hover{
+    background-color: #F1F1F1;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #383838;
+    border: none;
+    box-shadow:  3px 3px 3px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button img{
+    width: 25px;
+}
+
+button:hover{
+    opacity: 75%;
+}
+
+.previewSearch{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 600px;
+    height: 300px;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.111);
+}
+
+
+.previewSearch::-webkit-scrollbar{
+    width: 12px;
+    background: none;
+    border-radius:12px;
+}
+
+.previewSearch::-webkit-scrollbar-track{
+    background: none;
+    border-radius: 12px;
+}
+
+.previewSearch::-webkit-scrollbar-thumb{
+    background: #F0F0F0;
+    border-radius: 6px;
+}
+
+a{
+    display: flex;
+    padding: 15px 25px;
+    width: 100%;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    font-size: 18px;
+    font-weight: 600;
+    color: #151515;
+    border-bottom: 1px solid #C9C9C9;
+}
+
+a:hover{
+    background-color: #F1F1F1;
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        height: 350px;
+    }
+    label{
+        font-size: 24px;
+    }
+    input[type="search"]{
+        width: 400px;
+        height: 40px;
+    }
+    button{
+        width: 35px;
+        height: 35px;
+    }
+    button img{
+        width: 22px;
+    }
+    .previewSearch{
+        width: 450px;
+        height: 180px;
+    }
+    a{
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    main{
+        height: 270px;
+    }
+    label{
+        font-size: 17px;
+    }
+    input[type="search"]{
+        width: 272px;
+        height: 30px;
+        font-size: 13px;
+    }
+    button{
+        width: 25px;
+        height: 25px;
+    }
+    button img{
+        width: 17px;
+    }
+    .previewSearch{
+        width: 300px;
+        height: 155px;
+    }
+    .previewSearch::-webkit-scrollbar{
+        width: 6px;
+        background: none;
+        border-radius:3px;
+    }
+    .previewSearch::-webkit-scrollbar-track{
+        background: none;
+        border-radius: 6px;
+    }
+    .previewSearch::-webkit-scrollbar-thumb{
+        background: #F0F0F0;
+        border-radius: 3px;
+    }
+    a{
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    main{
+        width: 85%;
+        height: 270px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input[type="search"]{
+        width: 232px;
+        height: 30px;
+        font-size: 13px;
+    }
+    button{
+        width: 25px;
+        height: 25px;
+    }
+    button img{
+        width: 17px;
+    }
+    .previewSearch{
+        width: 270px;
+        height: 150px;
+    }
+    .previewSearch::-webkit-scrollbar{
+        width: 6px;
+        background: none;
+        border-radius:3px;
+    }
+    .previewSearch::-webkit-scrollbar-track{
+        background: none;
+        border-radius: 6px;
+    }
+    .previewSearch::-webkit-scrollbar-thumb{
+        background: #F0F0F0;
+        border-radius: 3px;
+    }
+    a{
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    main{
+        height: 270px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input[type="search"]{
+        width: 192px;
+        height: 30px;
+        font-size: 13px;
+    }
+    button{
+        width: 25px;
+        height: 25px;
+    }
+    button img{
+        width: 17px;
+    }
+    .previewSearch{
+        width: 230px;
+        height: 150px;
+    }
+    .previewSearch::-webkit-scrollbar{
+        width: 6px;
+        background: none;
+        border-radius:3px;
+    }
+    .previewSearch::-webkit-scrollbar-track{
+        background: none;
+        border-radius: 6px;
+    }
+    .previewSearch::-webkit-scrollbar-thumb{
+        background: #F0F0F0;
+        border-radius: 3px;
+    }
+    a{
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+}
